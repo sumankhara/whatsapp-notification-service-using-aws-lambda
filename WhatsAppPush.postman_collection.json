@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "cc64fa34-134f-47fa-a397-95c3aba9b48a",
+		"name": "WhatsAppPush",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Templates",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"Suman Khara\",\r\n    \"messageText\": \"Tomorrow class will start from 10:00 AM\"\r\n}"
+				},
+				"url": {
+					"raw": "https://q86yyksk95.execute-api.us-east-1.amazonaws.com/dev/templates",
+					"protocol": "https",
+					"host": [
+						"q86yyksk95",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"templates"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
